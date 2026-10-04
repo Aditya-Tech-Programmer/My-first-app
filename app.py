@@ -67,10 +67,7 @@ st.markdown("""
 # DATA LOCATION
 # =========================================================
 
-if os.path.exists("/content/drive/MyDrive"):
-    DATA_DIR = "/content/drive/MyDrive/RailBookData"
-else:
-    DATA_DIR = "/content/railbook_data"
+DATA_DIR = "railbook_data"
 
 os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -78,8 +75,8 @@ USERS_FILE = os.path.join(DATA_DIR, "users.csv")
 TRAINS_FILE = os.path.join(DATA_DIR, "trains.csv")
 BOOKINGS_FILE = os.path.join(DATA_DIR, "bookings.csv")
 PASSENGERS_FILE = os.path.join(DATA_DIR, "passengers.csv")
-TICKET_FOLDER = os.path.join(DATA_DIR, "tickets")
 
+TICKET_FOLDER = os.path.join(DATA_DIR, "tickets")
 os.makedirs(TICKET_FOLDER, exist_ok=True)
 
 
